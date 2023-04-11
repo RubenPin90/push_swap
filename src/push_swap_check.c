@@ -6,7 +6,7 @@
 /*   By: rpinchas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 15:50:36 by rpinchas          #+#    #+#             */
-/*   Updated: 2023/03/13 17:59:33 by rpinchas         ###   ########.fr       */
+/*   Updated: 2023/04/11 17:12:45 by yourLogin        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	**check_input(int argc, char **argv)
 
 	len = 0;
 	if (argc < 2)
-		exit(0);
+		exit(1);
 	if (argc == 2)
 	{
 		input = ft_split(argv[1], ' ');
@@ -48,7 +48,7 @@ int	check_num(int argc, char **input, t_bool check)
 
 	j = 0;
 	if (!argc)
-		ft_error(NULL, NON);
+		ft_error(input, ARRAY);
 	if (check)
 		i = 0;
 	else

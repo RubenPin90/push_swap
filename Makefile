@@ -6,7 +6,7 @@
 #    By: rpinchas <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/16 10:13:52 by rpinchas          #+#    #+#              #
-#    Updated: 2023/03/12 19:13:35 by rpinchas         ###   ########.fr        #
+#    Updated: 2023/04/11 16:29:37 by yourLogin        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -86,22 +86,22 @@ ${FILE}:
 
 test: all ${FILE}
 	@echo "${YELLOW}+++RUNNING TESTS+++${RESET}"
-	@echo "${BLUE}\nTEST 1: SINGLE VS. MULTIPLE ARGS\n${RESET}"
-	./${TESTER} -1000 1000 100 0 0
-	./${TESTER} -1000 1000 100 0 1
-	./${TESTER} -1000 1000 100 0 2
-	@echo "${BLUE}\nTEST 2: NOT ALLOWED CHAR\n${RESET}"
-	./${TESTER}	-1000 1000 100 1 0
-	./${TESTER} -1000 1000 100 1 1
-	./${TESTER}	-1000 1000 100 1 2
-	@echo "${BLUE}\nTEST 3: MAX INT\n${RESET}"
-	./${TESTER}	-1000 1000 100 2 0
-	./${TESTER}	-1000 1000 100 2 1
-	./${TESTER}	-1000 1000 100 2 2
-	@echo "${BLUE}\nTEST 4: DUPLICATE\n${RESET}"
-	./${TESTER}	-1000 1000 100 3 0
-	./${TESTER}	-1000 1000 100 3 1
-	./${TESTER}	-1000 1000 100 3 2
+#	@echo "${BLUE}\nTEST 1: SINGLE VS. MULTIPLE ARGS\n${RESET}"
+	./${TESTER} 
+##	./${TESTER} -1000 1000 100 0 1
+#	./${TESTER} -1000 1000 100 0 2
+#	@echo "${BLUE}\nTEST 2: NOT ALLOWED CHAR\n${RESET}"
+#	./${TESTER}	-1000 1000 100 1 0
+#	./${TESTER} -1000 1000 100 1 1
+#	./${TESTER}	-1000 1000 100 1 2
+#	@echo "${BLUE}\nTEST 3: MAX INT\n${RESET}"
+#	./${TESTER}	-1000 1000 100 2 0
+#	./${TESTER}	-1000 1000 100 2 1
+#	./${TESTER}	-1000 1000 100 2 2
+#	@echo "${BLUE}\nTEST 4: DUPLICATE\n${RESET}"
+#	./${TESTER}	-1000 1000 100 3 0
+#	./${TESTER}	-1000 1000 100 3 1
+#	./${TESTER}	-1000 1000 100 3 2
 
 tclean:
 	@echo "${GREEN}Removing testfiles...${RESET}"

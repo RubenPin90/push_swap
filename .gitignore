@@ -3,5 +3,5 @@ push_swap_visualizer-master
 testfile
 tester
 imgui.ini
-checker
+checker_linux
 .gitignore
