@@ -15,7 +15,6 @@
 ## Contents
 
 * [About the Project](#about-the-project)
-* [Implemented Functions](#implemented-functions)
 * [My Implementation](#my-implementation)
 * [Project Structure](#project-structure)
 * [Usage](#usage)
@@ -25,16 +24,6 @@
 This project implements the classic **push\_swap** problem:
 Given a list of integers, it must be sorted using only a limited set of stack operations. The goal is to minimize the number of operations.
 The project is written in C and uses a linked list structure with normalized indices for efficient comparisons.
-
-## Implemented Functions
-
-* **Stack operations:** `sa`, `sb`, `ss`, `pa`, `pb`, `ra`, `rb`, `rr`, `rra`, `rrb`, `rrr`
-* **Parsing & validation:** `check_input`, `ar_to_list` (SINGLE|MULTI), duplicate checks, `INT_MIN/INT_MAX` handling
-* **Helper functions:** `count_list`, `check_sorted`, `find_min`, `free_ar`, `free_list`
-* **Sorting logic:**
-
-  * Small cases: `ft_sort_two`, `ft_sort_three`, `ft_sort_four`, `ft_sort_five`
-  * Large case: `ft_radix` (LSD Radix on normalized indices)
 
 ## My Implementation
 
