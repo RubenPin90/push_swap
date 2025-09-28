@@ -44,6 +44,7 @@ Stacks are stored as singly linked lists (`t_list`) from libft, with each node h
 * Round 1 (bit 0): `[2, 3]` go to B, `[5]` stays in A.
 * Round 2 (bit 1): reorder again by the second bit.
 * Round 3 (bit 2): reorder by the third bit → final order is sorted.
+
 Radix is not the most efficient method, but it was good enough to achieve solid and reliable results to pass this project.
 
 ## Project Structure
